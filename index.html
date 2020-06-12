@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Chess</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="data/ico/favicon.png">
     
     <style>
         
-        @font-face {
-    font-family: Chess; /* Гарнитура шрифта */
-    src: local(Chess), url(data/fonts/chess.ttf); /* Для остальных браузеров */
-   }
+        
+    @font-face {
+    font-family: 'Chess';
+    src: url(data/fonts/chess.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+        }
         
         * {
             box-sizing: border-box; padding: 0; margin: 0;
@@ -26,7 +31,6 @@
             width: 30px;
             height: 30px;
             float: left;
-/*            font-family: Chess Maya;*/
         }
         
         .white {
@@ -42,7 +46,6 @@
         i {
             font-style: normal;
             font-family: "Chess";
-            font-weight: 800;
             font-size: 20pt;
             
         }
